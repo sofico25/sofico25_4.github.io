@@ -1,0 +1,180 @@
+/* Mobile First стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+/* Шапка */
+header {
+    background-color: #e1c37d;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.site-title h1 {
+    text-align: center;
+}
+
+/* Навигация */
+nav.main-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav.main-menu a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #eeeaea;
+    margin-bottom: 4px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Основной контент */
+.content {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+/* Список ссылок */
+ul {
+    margin: 10px 0;
+    list-style-type: disc !important; /* Добавляем маркеры */
+    padding-left: 20px !important; /* Отступ для маркеров */
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: list-item !important; /* Принудительно делаем элементами списка */
+}
+
+ul li a {
+    text-decoration: none;
+}
+/* Для вложенного нумерованного списка */
+ol {
+    list-style-type: decimal !important;
+    padding-left: 30px !important;
+    margin: 10px 0;
+}
+
+ol li {
+    display: list-item !important;
+}
+
+/* Таблица - ДОБАВИЛ !important чтобы переопределить Bootstrap */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td, th {
+    border: 1px solid #313131 !important;
+    padding: 12px;
+    text-align: left;
+}
+
+/* ВЕРНУЛ ПРЕЖНИЕ ЦВЕТА ТАБЛИЦЫ С !important */
+tr:first-child th {
+    background-color: rgb(187, 247, 255) !important;
+}
+
+tr:nth-child(odd) {
+    background-color: #b8faca !important;
+}
+
+tr:nth-child(even) {
+    background-color: #d497f1 !important;
+}
+
+/* Форма */
+form {
+    margin: 10px 0;
+}
+
+.content .form-control, .content .form-select {
+    border: 1px solid #008296;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.content form .mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.content .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal !important;
+}
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #008296;
+    border-radius: 20px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #ff0099;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: auto;
+}
+
+/* Футер */
+footer {
+    background-color: #6a0000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Стили для планшетов (768px и выше) */
+@media (min-width: 768px) {
+    .site-title h1 {
+        text-align: left;
+    }
+    
+    nav.main-menu {
+        flex-direction: row;
+        width: auto;
+        gap: 15px;
+    }
+    
+    nav.main-menu a {
+        margin-bottom: 0;
+    }
+}
