@@ -1,4 +1,4 @@
-/* Mobile First стили */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     color: #000000;
 }
 
-/* Шапка */
+
 header {
     background-color: #e1c37d;
     padding: 1rem 0;
@@ -42,28 +42,28 @@ nav.main-menu a {
     color: #000000;
 }
 
-/* Основной контент */
+
 .content {
     padding: 2rem 0;
     width: 100%;
 }
 
-/* Список ссылок */
+
 ul {
     margin: 10px 0;
-    list-style-type: disc !important; /* Добавляем маркеры */
-    padding-left: 20px !important; /* Отступ для маркеров */
+    list-style-type: disc !important; 
+    padding-left: 20px !important; 
 }
 
 ul li {
     margin-bottom: 10px;
-    display: list-item !important; /* Принудительно делаем элементами списка */
+    display: list-item !important;
 }
 
 ul li a {
     text-decoration: none;
 }
-/* Для вложенного нумерованного списка */
+
 ol {
     list-style-type: decimal !important;
     padding-left: 30px !important;
@@ -74,7 +74,7 @@ ol li {
     display: list-item !important;
 }
 
-/* Таблица - ДОБАВИЛ !important чтобы переопределить Bootstrap */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -87,7 +87,7 @@ td, th {
     text-align: left;
 }
 
-/* ВЕРНУЛ ПРЕЖНИЕ ЦВЕТА ТАБЛИЦЫ С !important */
+
 tr:first-child th {
     background-color: rgb(187, 247, 255) !important;
 }
@@ -100,7 +100,7 @@ tr:nth-child(even) {
     background-color: #d497f1 !important;
 }
 
-/* Форма */
+
 form {
     margin: 10px 0;
 }
@@ -152,7 +152,7 @@ input[type="submit"] {
     width: auto;
 }
 
-/* Футер */
+
 footer {
     background-color: #6a0000;
     color: rgb(255, 255, 255);
@@ -162,7 +162,7 @@ footer {
     margin-top: 40px;
 }
 
-/* Стили для планшетов (768px и выше) */
+/* Стили для планшетов  */
 @media (min-width: 768px) {
     .site-title h1 {
         text-align: left;
